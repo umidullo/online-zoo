@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper-large {
+  width: 100%;
+  max-width: 162rem;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 144rem;
+}
