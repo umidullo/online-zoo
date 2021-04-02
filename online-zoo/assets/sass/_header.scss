@@ -76,6 +76,7 @@ body {
     .nav__link_active {
       font-weight: 900;
       border-bottom: 1px solid $gray-1;
+      // pointer-events: none;
     }
   }
 }
@@ -110,7 +111,7 @@ body.dark {
   display: none;
 }
 
-.slider {
+.ch-slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -121,7 +122,7 @@ body.dark {
   transition: 0.4s;
 }
 
-.slider:before {
+.ch-slider:before {
   position: absolute;
   content: "";
   height: 2rem;
@@ -133,11 +134,11 @@ body.dark {
   transition: 0.4s;
 }
 
-.checkbox:checked + .slider {
+.checkbox:checked + .ch-slider {
   background-color: $gray-2;
 }
 
-.checkbox:checked + .slider:before {
+.checkbox:checked + .ch-slider:before {
   background-color: $checked;
   transform: translateX(22px);
 }
@@ -146,10 +147,10 @@ body.dark {
   background-color: $gray-1;
 }
 
-.slider.round {
+.ch-slider.round {
   border-radius: 19rem;
 }
 
-.slider.round:before {
+.ch-slider.round:before {
   border-radius: 50%;
 }
