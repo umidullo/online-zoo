@@ -1,0 +1,51 @@
+.how-work {
+  background-color: $light-bg;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 79rem;
+  }
+  &__title {
+    @include title($gray-1);
+    margin-bottom: 3rem;
+  }
+  &__description {
+    @include description($gray-2);
+    margin-bottom: 3rem;
+  }
+  &__animals {
+    margin-bottom: 2.7rem;
+  }
+  &__progress {
+    @include progress($gray-1, 4);
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    @include button__icon();
+  }
+}
+
+// DARK MODE STYLES
+body.dark {
+  .how-work {
+    background-color: $gray-1;
+
+    &__title {
+      @include title($base);
+    }
+
+    &__description {
+      @include description($gray-6);
+    }
+
+    &__progress {
+      @include progress($base, 4);
+    }
+  }
+}

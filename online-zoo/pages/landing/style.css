@@ -21,7 +21,9 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 144rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 0;
 }
 
 body .header {
@@ -59,6 +61,10 @@ body .logo {
   text-decoration: none;
 }
 
+body .logo h1 {
+  display: none;
+}
+
 body .logo .logo-txt-1 {
   font-weight: 900;
   font-size: 3.6rem;
@@ -85,6 +91,8 @@ body .nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  max-width: 57.3rem;
 }
 
 body .nav .nav__ul {
@@ -200,5 +208,501 @@ body.dark .nav__link_active {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.watch {
+  background-image: url(../../../online-zoo/assets/images/main-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.watch__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.social {
+  padding-top: 21.6rem;
+}
+
+.social__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social__ul .social__item {
+  list-style: none;
+}
+
+.social__ul .social__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.social__ul .social__link_instagram {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/instagram.svg);
+          mask-image: url(../../../online-zoo/assets/icons/instagram.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.social__ul .social__link_twitter {
+  width: 2rem;
+  height: 16.25px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/twitter.svg);
+          mask-image: url(../../../online-zoo/assets/icons/twitter.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.social__ul .social__link_youtube {
+  width: 2rem;
+  height: 13.75px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/youtube.svg);
+          mask-image: url(../../../online-zoo/assets/icons/youtube.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.social__ul .social__link_vk {
+  width: 2rem;
+  height: 11.41px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/vk.svg);
+          mask-image: url(../../../online-zoo/assets/icons/vk.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.watch__link {
+  padding-top: 10.6rem;
+}
+
+.watch__link .watch__title {
+  font-weight: 900;
+  font-size: 8.9rem;
+  line-height: 10.4rem;
+  width: 100%;
+  max-width: 79.3rem;
+  color: #fefefe;
+}
+
+.watch__link .watch__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  width: 245px;
+  height: 55px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 3.7rem;
+}
+
+.watch__link .watch__button .play-icon {
+  margin-left: 3.9rem;
+  margin-right: 0.5rem;
+}
+
+.watch__link .watch__button:hover {
+  -webkit-filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.watch__link .watch__button:active {
+  -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.watch__wrapper-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.2rem;
+}
+
+.animals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 30rem;
+}
+
+.animals__slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.animals__content {
+  position: absolute;
+  z-index: 2;
+}
+
+.animals__progress {
+  margin-top: 2rem;
+}
+
+.animals__progress .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.animals__progress .progress__current {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #828282;
+}
+
+.animals__progress .progress__current b,
+.animals__progress .progress__current span {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fefefe;
+}
+
+.animals__progress .progress__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 245px;
+  height: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+.animals__progress .progress__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 3.0625rem;
+  height: 1rem;
+  cursor: pointer;
+  background: #fefefe;
+}
+
+.bg {
+  position: relative;
+  width: 108rem;
+}
+
+.bg__line {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  height: 1px;
+  width: 108rem;
+  background-color: #fefefe;
+}
+
+.bg__dot {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #fefefe;
+  border-radius: 50%;
+}
+
+.bg__dot span {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 3px;
+  top: 3px;
+  background: #fefefe;
+  border-radius: 50%;
+}
+
+.asd .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.asd .progress__current {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #828282;
+}
+
+.asd .progress__current b,
+.asd .progress__current span {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #333333;
+}
+
+.asd .progress__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 245px;
+  height: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+.asd .progress__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 6.125rem;
+  height: 1rem;
+  cursor: pointer;
+  background: #333333;
+}
+
+.how-work {
+  background-color: #ffffff;
+}
+
+.how-work__wrapper {
+  width: 100%;
+  max-width: 79rem;
+}
+
+.how-work__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #333333;
+  margin-bottom: 3rem;
+}
+
+.how-work__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #4f4f4f;
+  margin-bottom: 3rem;
+}
+
+.how-work__animals {
+  margin-bottom: 2.7rem;
+}
+
+.how-work__progress {
+  margin-bottom: 3rem;
+}
+
+.how-work__progress .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-work__progress .progress__current {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #828282;
+}
+
+.how-work__progress .progress__current b,
+.how-work__progress .progress__current span {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #333333;
+}
+
+.how-work__progress .progress__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 245px;
+  height: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+.how-work__progress .progress__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 6.125rem;
+  height: 1rem;
+  cursor: pointer;
+  background: #333333;
+}
+
+.how-work__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.how-work__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  width: 245px;
+  height: 55px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.how-work__button .play-icon {
+  margin-left: 3.9rem;
+  margin-right: 0.5rem;
+}
+
+.how-work__button:hover {
+  -webkit-filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.how-work__button:active {
+  -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .how-work {
+  background-color: #333333;
+}
+
+body.dark .how-work__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #fefefe;
+}
+
+body.dark .how-work__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #f2f2f2;
+}
+
+body.dark .how-work__progress .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.dark .how-work__progress .progress__current {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #828282;
+}
+
+body.dark .how-work__progress .progress__current b,
+body.dark .how-work__progress .progress__current span {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fefefe;
+}
+
+body.dark .how-work__progress .progress__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 245px;
+  height: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+body.dark .how-work__progress .progress__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 6.125rem;
+  height: 1rem;
+  cursor: pointer;
+  background: #fefefe;
 }
 /*# sourceMappingURL=style.css.map */

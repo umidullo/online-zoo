@@ -18,6 +18,10 @@ body {
     margin-bottom: 2.3rem;
     text-decoration: none;
 
+    h1 {
+      display: none;
+    }
+
     .logo-txt-1 {
       font-weight: 900;
       font-size: 3.6rem;
@@ -39,6 +43,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 57.3rem;
 
     .nav__ul {
       width: 100%;

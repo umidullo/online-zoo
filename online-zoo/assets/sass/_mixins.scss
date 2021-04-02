@@ -1,0 +1,87 @@
+@mixin button__icon {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 245px;
+  height: 55px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  border-radius: 3px;
+
+  .play-icon {
+    margin-left: 3.9rem;
+    margin-right: 0.5rem;
+  }
+
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $light-bg;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+    transition: 0.2s;
+    transform: scale(1.01);
+  }
+
+  &:active {
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@mixin progress($color, $number) {
+  .progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__current {
+      b,
+      span {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        color: $color;
+      }
+
+      font-weight: 900;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      color: $gray-3;
+    }
+
+    &__input {
+      display: block;
+      appearance: none;
+      width: 245px;
+      height: 5px;
+      outline: none;
+      margin-top: 1.5rem;
+      background: rgba(189, 189, 189, 0.57);
+    }
+
+    &__input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 24.5rem / $number;
+      height: 1rem;
+      cursor: pointer;
+      background: $color;
+    }
+  }
+}
+
+@mixin title($color) {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: $color;
+}
+
+@mixin description($color) {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: $color;
+}
