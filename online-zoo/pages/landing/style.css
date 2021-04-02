@@ -705,4 +705,74 @@ body.dark .how-work__progress .progress__input::-webkit-slider-thumb {
   cursor: pointer;
   background: #fefefe;
 }
+
+.inspiration {
+  background-color: #f2f2f2;
+}
+
+.inspiration__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inspiration__item {
+  width: 100%;
+  max-width: 38rem;
+  height: 21.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inspiration__icon {
+  margin-bottom: 1.5rem;
+}
+
+.inspiration__subtitle {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.inspiration__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #4f4f4f;
+}
+
+body.dark .inspiration {
+  background-color: #4f4f4f;
+}
+
+body.dark .inspiration__subtitle {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #fefefe;
+}
+
+body.dark .inspiration__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #f2f2f2;
+}
 /*# sourceMappingURL=style.css.map */

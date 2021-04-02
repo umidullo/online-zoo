@@ -85,3 +85,11 @@
   line-height: 1.6rem;
   color: $color;
 }
+
+@mixin h3($color) {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: $color;
+}
