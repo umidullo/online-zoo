@@ -775,4 +775,549 @@ body.dark .inspiration__description {
   line-height: 1.6rem;
   color: #f2f2f2;
 }
+
+.pets {
+  background-color: #ffffff;
+}
+
+.pets__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.pets__slider .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 130rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -65rem;
+}
+
+.pets__slider .slider__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.pets__slider .btn-left {
+  margin-right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #828282;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/arrow.svg);
+          mask-image: url(../../../online-zoo/assets/icons/arrow.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.pets__slider .btn-right {
+  margin-left: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #333333;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/arrow.svg);
+          mask-image: url(../../../online-zoo/assets/icons/arrow.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pets__slider .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pets__slider .card:hover__description {
+  display: block;
+}
+
+.pets__slider .card__description {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  max-width: 19.6rem;
+  top: 26.9rem;
+  left: 2.2rem;
+}
+
+.pets__slider .card__description p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 18rem;
+  margin-bottom: 1.4rem;
+}
+
+.pets__slider .card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pets__slider .card__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pets__slider .card__link img {
+  margin-right: 0.3rem;
+}
+
+.pets__slider .card .link-online {
+  color: #4bd8b5;
+}
+
+.pets__slider .card .link-donate {
+  color: #ffffff;
+}
+
+.pets__progress {
+  margin-top: 46.6rem;
+}
+
+.pets__progress .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pets__progress .progress__current {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #828282;
+}
+
+.pets__progress .progress__current b,
+.pets__progress .progress__current span {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #333333;
+}
+
+.pets__progress .progress__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 245px;
+  height: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+.pets__progress .progress__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 3.0625rem;
+  height: 1rem;
+  cursor: pointer;
+  background: #333333;
+}
+
+.pets__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+.pets__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  width: 245px;
+  height: 55px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pets__button .play-icon {
+  margin-left: 3.9rem;
+  margin-right: 0.5rem;
+}
+
+.pets__button:hover {
+  -webkit-filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.pets__button:active {
+  -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.slider__card:hover .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__card:hover .card:hover__description {
+  display: block;
+}
+
+.slider__card:hover .card__description {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  max-width: 19.6rem;
+  top: 26.9rem;
+  left: 2.2rem;
+}
+
+.slider__card:hover .card__description p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 18rem;
+  margin-bottom: 1.4rem;
+}
+
+.slider__card:hover .card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__card:hover .card__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slider__card:hover .card__link img {
+  margin-right: 0.3rem;
+}
+
+.slider__card:hover .card .link-online {
+  color: #4bd8b5;
+}
+
+.slider__card:hover .card .link-donate {
+  color: #ffffff;
+}
+
+body.dark .pets {
+  background-color: #333333;
+}
+
+body.dark .pets__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #fefefe;
+}
+
+body.dark .pets__progress .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.dark .pets__progress .progress__current {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #828282;
+}
+
+body.dark .pets__progress .progress__current b,
+body.dark .pets__progress .progress__current span {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fefefe;
+}
+
+body.dark .pets__progress .progress__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 245px;
+  height: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+body.dark .pets__progress .progress__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 3.0625rem;
+  height: 1rem;
+  cursor: pointer;
+  background: #fefefe;
+}
+
+body.dark .pets__slider .btn-right {
+  background-color: #fefefe;
+}
+
+.pay {
+  background-color: #f2f2f2;
+}
+
+.pay__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pay__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #4f4f4f;
+  text-align: center;
+  margin-bottom: 9.2rem;
+}
+
+.pay__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pay__arrow {
+  width: 10.7rem;
+  height: 2px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  position: relative;
+  margin-top: 5.4rem;
+}
+
+.pay__arrow .arrow-head {
+  position: absolute;
+  margin-top: -4px;
+  margin-left: 9.7rem;
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -o-border-image: linear-gradient(to right, #4bd8b5 -14.32%, #49d6df 100.68%) 1% 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(-14.32%, #4bd8b5), color-stop(100.68%, #49d6df)) 1% 1;
+     border-image: linear-gradient(to right, #4bd8b5 -14.32%, #49d6df 100.68%) 1% 1;
+}
+
+.pay__subtitle {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #4f4f4f;
+  margin-top: -10.5rem;
+}
+
+.pay__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pay__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  width: 245px;
+  height: 55px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 11.5rem;
+}
+
+.pay__button .play-icon {
+  margin-left: 3.9rem;
+  margin-right: 0.5rem;
+}
+
+.pay__button:hover {
+  -webkit-filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.pay__button:active {
+  -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .pay {
+  background-color: #4f4f4f;
+}
+
+body.dark .pay__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #fefefe;
+}
+
+body.dark .pay__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #f2f2f2;
+}
+
+body.dark .pay__subtitle {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #fefefe;
+}
 /*# sourceMappingURL=style.css.map */

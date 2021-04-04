@@ -1,0 +1,55 @@
+.pets {
+  background-color: $light-bg;
+
+  &__title {
+    @include title($gray-1);
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  &__slider {
+    @include slider();
+  }
+
+  &__progress {
+    margin-top: 46.6rem;
+
+    @include progress($gray-1, 8);
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    @include button__icon();
+  }
+}
+
+.slider__card:hover {
+  @include card();
+}
+
+body.dark {
+  .pets {
+    background-color: $gray-1;
+
+    &__title {
+      @include title($base);
+    }
+
+    &__progress {
+      @include progress($base, 8);
+    }
+
+    &__slider {
+      .btn-right {
+        background-color: $base;
+      }
+    }
+  }
+}
