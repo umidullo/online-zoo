@@ -1962,7 +1962,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-label::before {
+.agreement-label::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -1975,7 +1975,7 @@ label::before {
   margin-right: 0.5rem;
 }
 
-label {
+.agreement-label {
   font-size: 12px;
   line-height: 14px;
   color: #bdbdbd;
@@ -2061,5 +2061,82 @@ address {
 .address__link a {
   text-decoration: none;
   color: #fefefe;
+}
+
+.fsocial__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.fsocial__ul .fsocial__item {
+  list-style: none;
+}
+
+.fsocial__ul .fsocial__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.fsocial__ul .social__link_instagram {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/instagram.svg);
+          mask-image: url(../../../online-zoo/assets/icons/instagram.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.fsocial__ul .social__link_twitter {
+  width: 2rem;
+  height: 16.25px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/twitter.svg);
+          mask-image: url(../../../online-zoo/assets/icons/twitter.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.fsocial__ul .social__link_youtube {
+  width: 2rem;
+  height: 13.75px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/youtube.svg);
+          mask-image: url(../../../online-zoo/assets/icons/youtube.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.fsocial__ul .social__link_vk {
+  width: 2rem;
+  height: 11.41px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-mask-image: url(../../../online-zoo/assets/icons/vk.svg);
+          mask-image: url(../../../online-zoo/assets/icons/vk.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.footer__line {
+  border-bottom: 0.5px solid #fefefe;
+}
+
+.copyright-block {
+  margin-top: 2.8rem;
+  padding-bottom: 7.2rem;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 14px;
+  color: #bdbdbd;
 }
 /*# sourceMappingURL=style.css.map */
