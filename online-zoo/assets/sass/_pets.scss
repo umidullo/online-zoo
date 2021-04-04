@@ -9,6 +9,10 @@
 
   &__slider {
     @include slider();
+
+    .slider__item {
+      @include card();
+    }
   }
 
   &__progress {
@@ -28,10 +32,6 @@
     justify-content: center;
     @include button__icon();
   }
-}
-
-.slider__card:hover {
-  @include card();
 }
 
 body.dark {

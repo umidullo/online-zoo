@@ -1,0 +1,82 @@
+.testimonial {
+  background: $light-bg;
+
+  &__title {
+    @include title($gray-1);
+    text-align: center;
+    padding-bottom: 6.6rem;
+  }
+  &__progress {
+    @include progress($gray-1, 8);
+    margin-top: 36rem;
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__slider {
+    @include slider();
+  }
+
+  &__card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 310px;
+    padding-top: 4.7rem;
+    background: $base;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+    border-radius: 5px;
+  }
+
+  &__img {
+    width: 6.8rem;
+    height: 6.8rem;
+    margin-bottom: 1.7rem;
+  }
+
+  &__subtitle {
+    @include h3($gray-1);
+    margin-bottom: 1.7rem;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 440px;
+    @include description($gray-2);
+  }
+}
+
+body.dark {
+  .testimonial {
+    background: $gray-1;
+
+    &__title {
+      @include title($base);
+    }
+    &__progress {
+      @include progress($base, 8);
+    }
+    &__card {
+      background: $gray-2;
+      box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+    }
+    &__subtitle {
+      @include h3($base);
+    }
+    &__description {
+      @include description($gray-6);
+    }
+
+    &__slider {
+      .btn-right {
+        background-color: $base;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.map {
+  background: $gray-6;
+
+  &__title {
+    @include title($gray-1);
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button {
+    margin-top: 3.1rem;
+    @include button__icon();
+  }
+
+  &__marker {
+    position: relative;
+  }
+
+  &__points {
+    position: absolute;
+
+    &:hover {
+      path {
+        fill: #eb5757;
+      }
+
+      .point__hint {
+        opacity: 1;
+      }
+    }
+
+    img {
+      position: absolute;
+    }
+
+    .point-icon {
+      top: 1.385rem;
+      left: 1.138rem;
+    }
+
+    &_eagle {
+      top: 7.4rem;
+      left: 12.1rem;
+    }
+    &_alligator {
+      top: 10.16rem;
+      left: 24.35rem;
+    }
+    &_gorilla {
+      top: 19rem;
+      left: 57.2rem;
+    }
+    &_panda {
+      top: 9rem;
+      left: 89.16rem;
+    }
+  }
+}
+
+.point {
+  position: relative;
+
+  &__hint {
+    opacity: 0;
+    position: absolute;
+    z-index: 3;
+    top: 8rem;
+    left: 3rem;
+    background: $base;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    border-radius: 8px;
+    height: 15rem;
+    width: 43.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      margin-left: 4.4rem;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12.9rem;
+
+    h4 {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 21px;
+      color: $gray-1;
+      margin-bottom: 0.7rem;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray-2;
+      margin-bottom: 0.5rem;
+
+      span {
+        font-weight: 500;
+        color: $gray-1;
+        margin: 0.5rem;
+      }
+    }
+  }
+}
