@@ -1884,7 +1884,8 @@ body.dark .testimonial__slider .btn-right {
   max-width: 38.3rem;
 }
 
-.name, .email {
+.name,
+.email {
   outline: none;
   border: none;
   height: 3.6rem;
@@ -1941,7 +1942,7 @@ legend {
   font-size: 12px;
   line-height: 14px;
   color: #bdbdbd;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
   padding: 0 4px;
 }
 
@@ -2014,8 +2015,8 @@ label {
 
 .submit .line__arrow {
   display: block;
-  width: .6rem;
-  height: .6rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-top: 1px solid #fefefe;
   border-right: 1px solid #fefefe;
   margin-left: 4.2rem;
@@ -2035,9 +2036,30 @@ label {
 }
 
 .address-title {
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+  color: #fefefe;
+  margin-bottom: 3.5rem;
+  margin-top: 4rem;
+}
+
+address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fefefe;
+  font-style: normal;
+  width: 19rem;
+}
+
+.address__link {
+  margin-top: 1.4rem;
+}
+
+.address__link a {
+  text-decoration: none;
   color: #fefefe;
 }
 /*# sourceMappingURL=style.css.map */

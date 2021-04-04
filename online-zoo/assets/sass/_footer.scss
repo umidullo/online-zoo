@@ -95,7 +95,7 @@
 .footer__form {
   display: flex;
   flex-direction: column;
-  margin-top: 4.2rem;  
+  margin-top: 4.2rem;
 }
 
 .form {
@@ -105,14 +105,15 @@
   max-width: 38.3rem;
 }
 
-.name, .email {
+.name,
+.email {
   outline: none;
   border: none;
   height: 3.6rem;
   background-color: $gray-1;
   border-bottom: 1px solid $gray-4;
   margin-bottom: 1rem;
-  
+
   font-size: 14px;
   line-height: 16px;
   color: $gray-5;
@@ -134,7 +135,6 @@ fieldset {
   box-sizing: border-box;
   border-radius: 3px;
   margin-bottom: 2.5rem;
-
 }
 
 legend {
@@ -142,7 +142,7 @@ legend {
   font-size: 12px;
   line-height: 14px;
   color: $gray-4;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
   padding: 0 4px;
 }
 
@@ -206,8 +206,8 @@ label {
 
     &__arrow {
       display: block;
-      width: .6rem;
-      height: .6rem;
+      width: 0.6rem;
+      height: 0.6rem;
       border-top: 1px solid $base;
       border-right: 1px solid $base;
       margin-left: 4.2rem;
@@ -226,8 +226,28 @@ label {
 }
 
 .address-title {
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   color: $base;
+  margin-bottom: 3.5rem;
+  margin-top: 4rem;
+}
+
+address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $base;
+  font-style: normal;
+  width: 19rem;
+}
+
+.address__link {
+  margin-top: 1.4rem;
+  a {
+    text-decoration: none;
+    color: $base;
+  }
 }
