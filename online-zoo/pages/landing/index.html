@@ -32,7 +32,7 @@
               </li>
               <li class="nav__item"><a href="#" class="nav__link">map</a></li>
               <li class="nav__item">
-                <a href="#" class="nav__link">contact us</a>
+                <a href="#anchor" class="nav__link">contact us</a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">design</a>
@@ -65,16 +65,28 @@
           <div class="social">
             <ul class="social__ul">
               <li class="social__item">
-                <a href="#" class="social__link social__link_instagram"></a>
+                <a
+                  href="https://www.instagram.com/"
+                  class="social__link social__link_instagram"
+                ></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link social__link_twitter"></a>
+                <a
+                  href="https://twitter.com/home"
+                  class="social__link social__link_twitter"
+                ></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link social__link_youtube"></a>
+                <a
+                  href="https://www.youtube.com/"
+                  class="social__link social__link_youtube"
+                ></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link social__link_vk"></a>
+                <a
+                  href="https://vk.com/"
+                  class="social__link social__link_vk"
+                ></a>
               </li>
             </ul>
           </div>
@@ -473,8 +485,53 @@
       <div class="wrapper">
         <h2 class="map__title">Map</h2>
         <div class="map__img">
-          <!-- <div class="map__marker">
-            <a href="#" class="point map__points map__points_eagle">
+          <div class="map__marker">
+            <div class="qwer">
+              <a href="#" class="point map__points map__points_eagle">
+                <svg
+                  width="67"
+                  height="94"
+                  viewBox="0 0 67 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.682 0C15.4489 0 0.615723 14.835 0.615723 33.0703C0.615723 50.7103 30.8461 90.9006 32.1338 92.6047C32.4956 93.0911 33.0753 93.375 33.6822 93.375C34.2891 93.375 34.8688 93.0911 35.2305 92.6047C36.5181 90.9006 66.7487 50.7105 66.7487 33.0703C66.7483 14.835 51.9151 0 33.682 0ZM33.682 50.5781C24.0305 50.5781 16.1763 42.7229 16.1763 33.0703C16.1763 23.4176 24.0305 15.5624 33.682 15.5624C43.3335 15.5624 51.1877 23.4176 51.1877 33.0703C51.1877 42.7229 43.3335 50.5781 33.682 50.5781Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="-11.7325"
+                      y1="-4.90899e-07"
+                      x2="83.027"
+                      y2="20.3729"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#4BD8B5" />
+                      <stop offset="1" stop-color="#49D6DF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img
+                  class="point-icon"
+                  src="../../../online-zoo/assets/icons/points/eagle.png"
+                  alt="eagle"
+                />
+              </a>
+              <div class="point__hint">
+                <img
+                  src="../../../online-zoo/assets/icons/points/eagle2.png"
+                  alt="icon"
+                />
+                <div class="point__description">
+                  <h4>West End Bald Eagle</h4>
+                  <p><span>Region:</span>on an island near Los Angeles</p>
+                  <p><span>Population:</span>more than 270 pairs in 2013</p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="point map__points map__points_alligator">
               <svg
                 width="67"
                 height="94"
@@ -500,29 +557,6 @@
                   </linearGradient>
                 </defs>
               </svg>
-
-              <img
-                class="point-icon"
-                src="../../../online-zoo/assets/icons/points/eagle.png"
-                alt="eagle"
-              />
-              <div class="point__hint">
-                <img
-                  src="../../../online-zoo/assets/icons/points/eagle2.png"
-                  alt="icon"
-                />
-                <div class="point__description">
-                  <h4>West End Bald Eagle</h4>
-                  <p><span>Region:</span>on an island near Los Angeles</p>
-                  <p><span>Population:</span>more than 270 pairs in 2013</p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="point map__points map__points_alligator">
-              <img
-                src="../../../online-zoo/assets/icons/Vector.svg"
-                alt="point"
-              />
               <img
                 class="point-icon"
                 src="../../../online-zoo/assets/icons/points/alligator.png"
@@ -540,7 +574,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="map__points map__points_gorilla">
+            <!-- <a href="#" class="map__points map__points_gorilla">
               <img
                 src="../../../online-zoo/assets/icons/Vector.svg"
                 alt="point"
@@ -561,8 +595,8 @@
                 src="../../../online-zoo/assets/icons/points/panda.png"
                 alt="eagle"
               />
-            </a>
-          </div> -->
+            </a> -->
+          </div>
           <svg
             width="1200"
             height="498"
@@ -1297,7 +1331,7 @@
     <footer class="footer">
       <div class="wrapper-large footer__line">
         <div class="footer__nav">
-          <a href="index.html" class="flogo">
+          <a name="anchor" href="index.html" class="flogo">
             <p class="flogo-txt-1">zoo</p>
             <p class="flogo-txt-2">online</p>
           </a>
@@ -1377,16 +1411,28 @@
             <div class="fsocial">
               <ul class="fsocial__ul">
                 <li class="fsocial__item">
-                  <a href="#" class="fsocial__link social__link_instagram"></a>
+                  <a
+                    href="https://www.instagram.com/"
+                    class="fsocial__link social__link_instagram"
+                  ></a>
                 </li>
                 <li class="fsocial__item">
-                  <a href="#" class="social__link social__link_twitter"></a>
+                  <a
+                    href="https://www.twitter.com/"
+                    class="social__link social__link_twitter"
+                  ></a>
                 </li>
                 <li class="fsocial__item">
-                  <a href="#" class="social__link social__link_vk"></a>
+                  <a
+                    href="https://www.vk.com/"
+                    class="social__link social__link_vk"
+                  ></a>
                 </li>
                 <li class="fsocial__item">
-                  <a href="#" class="social__link social__link_youtube"></a>
+                  <a
+                    href="https://www.youtube.com/"
+                    class="social__link social__link_youtube"
+                  ></a>
                 </li>
               </ul>
             </div>

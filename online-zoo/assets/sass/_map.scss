@@ -66,17 +66,24 @@
 .point {
   position: relative;
 
+  .point-icon {
+    position: absolute;
+    margin-top: -8.6rem;
+  }
+
   &__hint {
     opacity: 0;
     position: absolute;
     z-index: 3;
-    top: 8rem;
+    top: 0;
     left: 3rem;
     background: $base;
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     border-radius: 8px;
     height: 15rem;
     width: 43.6rem;
+    opacity: 0;
+    visibility: hidden;
 
     display: flex;
     align-items: center;
@@ -85,6 +92,11 @@
     img {
       margin-left: 4.4rem;
     }
+  }
+
+  &__hint:hover {
+    opacity: 1;
+    visibility: visible;
   }
 
   &__description {
