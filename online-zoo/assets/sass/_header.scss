@@ -19,7 +19,9 @@ body {
     text-decoration: none;
 
     h1 {
-      display: none;
+      visibility: hidden;
+      position: absolute;
+      z-index: -1;
     }
 
     .logo-txt-1 {

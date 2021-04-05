@@ -1,4 +1,40 @@
-.aside {
+.wrapper-xxl {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside-wrapper {
   position: sticky;
-  float: left;
+  top: 0;
+  width: 209px;
+  height: 647px;
+  display: block;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6rem;
+  width: 209px;
+  height: 587px;
+}
+
+.aside-slider {
+  height: 51rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cover {
+  margin-top: -14.7rem;
 }

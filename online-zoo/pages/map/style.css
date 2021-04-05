@@ -62,7 +62,9 @@ body .logo {
 }
 
 body .logo h1 {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
 }
 
 body .logo .logo-txt-1 {
