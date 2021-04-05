@@ -1,0 +1,147 @@
+.wrapper-xxl {
+  width: 100%;
+  max-width: 192rem;
+  display: flex;
+}
+.live {
+  background: $gray-6;
+  display: flex;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 120rem;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+  }
+
+  &__title {
+    @include title($gray-1);
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 79rem;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 38rem;
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    color: $gray-1;
+    margin-bottom: 0.6rem;
+  }
+
+  &__reason {
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray-2;
+    margin-bottom: 1.3rem;
+  }
+
+  &__btn {
+    display: flex;
+    width: 100%;
+    max-width: 19.4rem;
+    margin-top: 3.5rem;
+  }
+
+  &__button {
+    @include button__icon();
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.video_main {
+  margin-bottom: 3rem;
+
+  iframe {
+    z-index: 2;
+    width: 790px;
+    height: 442px;
+    border-radius: 5px;
+  }
+}
+
+.video_secondary {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 79rem;
+
+  iframe {
+    width: 246px;
+    height: 141px;
+    border-radius: 5px;
+  }
+}
+
+.video_buttons {
+  display: flex;
+  width: 37px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video_button {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c4c4c4;
+}
+
+.video_button_active {
+  width: 11px;
+  height: 11px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  border-radius: 50%;
+}
+
+/*===== SIDEBAR ======*/
+.aside {
+  display: flex;
+  flex-direction: column;
+
+  &__slider {
+    width: 100%;
+    max-width: 20.9rem;
+  }
+}
+
+.slider__btn {
+  display: block;
+}
+
+.aside__icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.sukaa {
+  display: block;
+}
+
+.animal-link {
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+}
