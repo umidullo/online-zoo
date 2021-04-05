@@ -1,0 +1,89 @@
+.favor {
+  background: $gray-6;
+
+  &__title {
+    @include title($gray-1);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    @include description($gray-2);
+    width: 100%;
+    max-width: 79rem;
+    margin-bottom: 5.4rem;
+  }
+
+  &__progress {
+    margin-top: 3rem;
+    @include progress($gray-1, 8);
+  }
+
+  &__slider {
+    width: 100%;
+    max-width: 120rem;
+  }
+}
+
+.fslider__item {
+  @include live-icon();
+}
+
+.wrapper_favor {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fslider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-right {
+  transform: rotate(180deg);
+}
+
+.fslider__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1073px;
+}
+
+.button__form_not,
+.button_not {
+  width: 108px;
+  height: 108px;
+}
+.button__form_not,
+.button_not,
+.button__img_not {
+  border-radius: 50%;
+}
+
+.button_not {
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* image size */
+.button__img_not {
+  width: 108px;
+  height: 108px;
+  object-fit: cover;
+  margin-top: -7px;
+  margin-left: -5px;
+}
+
+.button_not:hover {
+  cursor: pointer;
+}
