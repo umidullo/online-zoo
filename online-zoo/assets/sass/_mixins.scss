@@ -144,16 +144,16 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    text-decoration: none;
 
     &__description {
-      display: none;
+      visibility: hidden;
       z-index: 2;
       position: absolute;
       width: 100%;
       max-width: 19.6rem;
       top: 26.9rem;
-      left: 2.2rem;
+      left: 7.2rem;
 
       p {
         font-weight: normal;

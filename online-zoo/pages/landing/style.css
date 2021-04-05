@@ -855,17 +855,17 @@ body.dark .inspiration__description {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .pets__slider .slider__item .card__description {
-  display: none;
+  visibility: hidden;
   z-index: 2;
   position: absolute;
   width: 100%;
   max-width: 19.6rem;
   top: 26.9rem;
-  left: 2.2rem;
+  left: 7.2rem;
 }
 
 .pets__slider .slider__item .card__description p {
