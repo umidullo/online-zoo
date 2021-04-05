@@ -228,7 +228,8 @@ body.dark .nav__link_active {
 }
 
 .social {
-  padding-top: 21.6rem;
+  padding-top: 11.5rem;
+  padding-bottom: 10.1rem;
 }
 
 .social__ul {
@@ -375,6 +376,7 @@ body.dark .nav__link_active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 35.2rem;
 }
 
 .animals__content {
@@ -510,6 +512,19 @@ body.dark .nav__link_active {
   height: 1rem;
   cursor: pointer;
   background: #333333;
+}
+
+.animals__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .how-work {

@@ -11,7 +11,8 @@
 }
 
 .social {
-  padding-top: 21.6rem;
+  padding-top: 11.5rem;
+  padding-bottom: 10.1rem;
 }
 
 .social__ul {
@@ -97,6 +98,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  height: 35.2rem;
 }
 
 .animals__content {
@@ -147,4 +149,10 @@
 
 .asd {
   @include progress($gray-1, 4);
+}
+
+.animals__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
