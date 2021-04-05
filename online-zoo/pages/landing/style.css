@@ -1584,7 +1584,7 @@ body.dark .testimonial__slider .btn-right {
 }
 
 .map__marker {
-  position: relative;
+  position: absolute;
 }
 
 .map__points {
@@ -1593,10 +1593,6 @@ body.dark .testimonial__slider .btn-right {
 
 .map__points:hover path {
   fill: #eb5757;
-}
-
-.map__points:hover .point__hint {
-  opacity: 1;
 }
 
 .map__points img {
@@ -1615,17 +1611,17 @@ body.dark .testimonial__slider .btn-right {
 
 .map__points_alligator {
   top: 10.16rem;
-  left: 24.35rem;
+  left: 17.35rem;
 }
 
 .map__points_gorilla {
   top: 19rem;
-  left: 57.2rem;
+  left: 43.2rem;
 }
 
 .map__points_panda {
   top: 9rem;
-  left: 89.16rem;
+  left: 68.16rem;
 }
 
 .point {
@@ -1638,7 +1634,6 @@ body.dark .testimonial__slider .btn-right {
 }
 
 .point__hint {
-  opacity: 0;
   position: absolute;
   z-index: 3;
   top: 0;
@@ -1649,8 +1644,8 @@ body.dark .testimonial__slider .btn-right {
   border-radius: 8px;
   height: 15rem;
   width: 43.6rem;
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1666,7 +1661,7 @@ body.dark .testimonial__slider .btn-right {
   margin-left: 4.4rem;
 }
 
-.point__hint:hover {
+.point:hover .point__hint {
   opacity: 1;
   visibility: visible;
 }
