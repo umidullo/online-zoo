@@ -32,6 +32,13 @@
   }
 }
 
+@mixin flex($ai, $jc, $fd: row) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  flex-direction: $fd;
+}
+
 @mixin progress($color, $number) {
   .progress {
     display: flex;
@@ -76,6 +83,11 @@
   font-size: 4.8rem;
   line-height: 5.6rem;
   color: $color;
+
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 @mixin description($color) {
@@ -249,3 +261,5 @@
       linear-gradient(to right, #df496d 0%, #07eee0 100%);
   }
 }
+
+/*====LIVE ICON MIXIN SHOULD BE RE-WRITED====*/

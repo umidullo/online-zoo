@@ -15,6 +15,16 @@
   }
   &__animals {
     margin-bottom: 2.7rem;
+    width: 100%;
+    max-width: 790px;
+    height: 323px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left 70%;
+    border-radius: 5px;
   }
   &__progress {
     @include progress($gray-1, 4);
@@ -31,7 +41,6 @@
   }
 }
 
-// DARK MODE STYLES
 body.dark {
   .how-work {
     background-color: $gray-1;
@@ -46,6 +55,28 @@ body.dark {
 
     &__progress {
       @include progress($base, 4);
+    }
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 320px) {
+  .how-work {
+    &__wrapper {
+      width: 93.75%;
+    }
+    &__title {
+      margin-bottom: 3rem;
+    }
+    &__description {
+      margin-bottom: 3rem;
+    }
+    &__animals {
+      margin-bottom: 2.7rem;
+    }
+    &__img {
+      max-width: 100%;
     }
   }
 }
