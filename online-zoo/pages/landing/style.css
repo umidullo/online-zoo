@@ -344,6 +344,13 @@ body.dark .burger__item {
   padding-top: 20.6rem;
 }
 
+.watch__wrapper-inner {
+  padding-bottom: 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .watch__title {
   font-weight: 900;
   font-size: 8.9rem;
@@ -395,15 +402,8 @@ body.dark .burger__item {
           box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
 
-.watch__wrapper-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .social {
-  padding-top: 11.5rem;
-  padding-bottom: 10.1rem;
+  padding-top: 21.6rem;
 }
 
 .social__ul {
@@ -470,7 +470,9 @@ body.dark .burger__item {
           flex-direction: column;
   position: absolute;
   left: 69rem;
-  margin-top: -7rem;
+  margin-top: -8.6rem;
+  width: 100%;
+  max-width: 99rem;
 }
 
 .animals__slider {
@@ -482,12 +484,12 @@ body.dark .burger__item {
       -ms-flex-align: center;
           align-items: center;
   height: 35.2rem;
+  width: 100%;
   overflow: hidden;
 }
 
 .animals__content {
   position: absolute;
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -502,12 +504,53 @@ body.dark .burger__item {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  margin-left: 5rem;
-  overflow: hidden;
+  margin-left: 13.5rem;
+}
+
+.animals__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 14rem;
+  height: 20.3rem;
+}
+
+.animals__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.animals__image:hover {
+  width: 245px;
+  height: 352px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 5px 4px 50px rgba(152, 157, 198, 0.25);
+          box-shadow: 5px 4px 50px rgba(152, 157, 198, 0.25);
+}
+
+.animals__image:hover .animals__description {
+  display: block;
+}
+
+.animals__description {
+  position: absolute;
+  display: none;
 }
 
 .animals__progress {
   margin-top: 2rem;
+  padding-left: 7rem;
 }
 
 .animals__progress .progress {
@@ -557,55 +600,10 @@ body.dark .burger__item {
   background: #fefefe;
 }
 
-.animals__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  width: 100%;
-  max-width: 24.5rem;
-  height: 35.2rem;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
-}
-
-.animals__image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 5px 4px 50px rgba(152, 157, 198, 0.25);
-          box-shadow: 5px 4px 50px rgba(152, 157, 198, 0.25);
-}
-
-.animals__image:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.animals__image:hover .animals__description {
-  display: block;
-}
-
-.animals__description {
-  position: absolute;
-  display: none;
-}
-
 .bg {
-  position: relative;
-  width: 122.5rem;
+  position: absolute;
+  width: 99rem;
+  margin-top: -1.7rem;
 }
 
 .bg__line {
@@ -613,7 +611,7 @@ body.dark .burger__item {
   top: 6px;
   left: 5px;
   height: 1px;
-  width: 141rem;
+  width: 99rem;
   background-color: #fefefe;
 }
 
@@ -1048,6 +1046,16 @@ body.dark .inspiration__description {
       -ms-flex-direction: column;
           flex-direction: column;
   text-decoration: none;
+  width: 277px;
+  height: 399px;
+}
+
+.pets__slider .slider__item .card__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pets__slider .slider__item .card__description {
