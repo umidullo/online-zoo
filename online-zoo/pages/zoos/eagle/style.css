@@ -41,12 +41,14 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (width: 320px) {
   .wrapper {
     padding: 5rem 0;
   }
 }
 
+/*=====SLIDER SHOULD BE RE-WRITED=====*/
+/*=====CARD IS NOT WORKING=====*/
 /*====LIVE ICON MIXIN SHOULD BE RE-WRITED====*/
 .header {
   background-color: #ffffff;
@@ -313,8 +315,7 @@ body.dark .burger__item {
 
 @media (max-width: 1199px) and (min-width: 320px) {
   .header__wrapper {
-    width: 93.75%;
-    margin: 0 auto;
+    width: 100%;
   }
   .nav {
     display: none;

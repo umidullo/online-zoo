@@ -8,7 +8,7 @@
   }
 
   &__description {
-    @include description($gray-2);
+    @include description($gray-3);
     text-align: center;
     margin-bottom: 9.2rem;
   }
@@ -91,6 +91,86 @@ body.dark {
     }
     &__subtitle {
       @include h3($base);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pay {
+    &__description {
+      margin-bottom: 5rem;
+    }
+    &__arrow {
+      width: 4rem;
+      height: 2px;
+      margin-top: 5.4rem;
+      transform: rotate(90deg);
+
+      .arrow-head {
+        margin-top: -4px;
+        margin-left: 3.8rem;
+      }
+    }
+
+    &__button {
+      margin-top: 10.5rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 640px) {
+  .pay {
+    &__column {
+      flex-direction: column;
+      height: 87.5rem;
+    }
+
+    &__title {
+      margin-bottom: 1.5rem;
+    }
+
+    &__description {
+      width: 100%;
+      max-width: 53.8rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    &__arrow {
+      width: 4rem;
+      height: 2px;
+
+      .arrow-head {
+        margin-top: -4px;
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 639px) and (min-width: 320px) {
+  .pay {
+    &__column {
+      flex-direction: column;
+      height: 87.5rem;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__arrow {
+      width: 4rem;
+      height: 2px;
+
+      .arrow-head {
+        margin-top: -4px;
+        margin-left: 3rem;
+      }
     }
   }
 }

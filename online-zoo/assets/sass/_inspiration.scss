@@ -9,7 +9,6 @@
   &__item {
     width: 100%;
     max-width: 38rem;
-    height: 21.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,16 +47,45 @@ body.dark {
   .inspiration {
     &__item {
       width: 100%;
-      max-width: 28.7rem;
+      max-width: 28.6rem;
     }
   }
 }
 
-@media (max-width: 1199px) and (min-width: 320px) {
+@media (max-width: 1000px) and (min-width: 640px) {
   .inspiration {
     &__item {
       width: 100%;
       max-width: 28.7rem;
+
+      &:nth-child(2) {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+    }
+
+    &__column {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 639px) and (min-width: 320px) {
+  .inspiration {
+    &__item {
+      width: 100%;
+      max-width: 30rem;
+
+      &:nth-child(2) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__column {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
