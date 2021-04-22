@@ -42,11 +42,13 @@
 
     &_eagle {
       top: 7.4rem;
-      left: 12.1rem;
+      // left: 12.1rem;
+      left: 45%;
     }
     &_alligator {
       top: 10.16rem;
-      left: 17.35rem;
+      // left: 17.35rem;
+      left: 64%;
     }
     &_gorilla {
       top: 19rem;
@@ -117,6 +119,27 @@
         font-weight: 500;
         color: $gray-1;
         margin: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (width: 640px) {
+  .map {
+    &__title {
+      margin-bottom: 5rem;
+    }
+  }
+  .wrapper {
+    padding-bottom: 8rem;
+  }
+}
+
+@media (max-width: 639px) and (min-width: 320px) {
+  .map {
+    &__img {
+      svg {
+        display: none;
       }
     }
   }

@@ -186,12 +186,6 @@ body.dark {
   border-radius: 50%;
 }
 
-@media (max-width: 1600px) and (min-width: 1200px) {
-  .header__wrapper {
-    width: 75%;
-    margin: 0 auto;
-  }
-}
 @media (max-width: 1199px) and (min-width: 320px) {
   .header__wrapper {
     width: 100%;

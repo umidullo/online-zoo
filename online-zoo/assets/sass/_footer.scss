@@ -414,12 +414,10 @@ input:checked + .agreement-label::before {
     &__address {
       margin-right: 0rem;
       width: 100%;
-      max-width: 300px;
     }
 
     &__btn {
       width: 100%;
-      max-width: 30rem;
       display: flex;
       justify-content: center;
       margin-bottom: 8rem;

@@ -104,7 +104,6 @@ body.dark {
       width: 4rem;
       height: 2px;
       margin-top: 5.4rem;
-      transform: rotate(90deg);
 
       .arrow-head {
         margin-top: -4px;
@@ -139,6 +138,7 @@ body.dark {
     &__arrow {
       width: 4rem;
       height: 2px;
+      transform: rotate(90deg);
 
       .arrow-head {
         margin-top: -4px;
