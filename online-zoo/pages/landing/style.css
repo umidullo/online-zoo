@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1479,6 +1480,7 @@ body.dark .pets__slider .btn-right {
   background-color: #fefefe;
 }
 
+/* == задать для слайдеров отделбную обертку чтобы не костылить с абсолютами == */
 .pay {
   background-color: #f2f2f2;
 }
@@ -2028,6 +2030,8 @@ body.dark .testimonial__slider .btn-right {
 
 .map__marker {
   position: absolute;
+  width: 120rem;
+  height: 49.8rem;
 }
 
 .map__points {
@@ -2147,12 +2151,6 @@ body.dark .testimonial__slider .btn-right {
   }
   .wrapper {
     padding-bottom: 8rem;
-  }
-}
-
-@media (max-width: 639px) and (min-width: 320px) {
-  .map__img svg {
-    display: none;
   }
 }
 

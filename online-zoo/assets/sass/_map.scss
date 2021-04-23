@@ -20,6 +20,8 @@
 
   &__marker {
     position: absolute;
+    width: 120rem;
+    height: 49.8rem;
   }
 
   &__points {
@@ -135,12 +137,6 @@
   }
 }
 
-@media (max-width: 639px) and (min-width: 320px) {
-  .map {
-    &__img {
-      svg {
-        display: none;
-      }
-    }
-  }
-}
+// @media (max-width: 639px) and (min-width: 320px) {
+
+// }

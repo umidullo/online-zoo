@@ -629,6 +629,8 @@ body.dark .burger__item {
 
 .map__marker {
   position: absolute;
+  width: 120rem;
+  height: 49.8rem;
 }
 
 .map__points {
@@ -748,12 +750,6 @@ body.dark .burger__item {
   }
   .wrapper {
     padding-bottom: 8rem;
-  }
-}
-
-@media (max-width: 639px) and (min-width: 320px) {
-  .map__img svg {
-    display: none;
   }
 }
 
