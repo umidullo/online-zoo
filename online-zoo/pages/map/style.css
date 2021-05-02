@@ -10,7 +10,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .wrapper-large {
@@ -271,7 +272,7 @@ body.dark .burger__item {
 
 .ch-slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 2rem;
   width: 2rem;
   left: 6px;
@@ -406,6 +407,84 @@ body.dark .burger__item {
 }
 
 .favor__slider {
+  width: 100%;
+  max-width: 120rem;
+}
+
+body.dark .favor {
+  background: #4f4f4f;
+}
+
+body.dark .favor__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #fefefe;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  body.dark .favor__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+body.dark .favor__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #f2f2f2;
+}
+
+body.dark .favor__progress .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.dark .favor__progress .progress__current {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #828282;
+}
+
+body.dark .favor__progress .progress__current b,
+body.dark .favor__progress .progress__current span {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fefefe;
+}
+
+body.dark .favor__progress .progress__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 245px;
+  height: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+body.dark .favor__progress .progress__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 3.0625rem;
+  height: 1rem;
+  cursor: pointer;
+  background: #fefefe;
+}
+
+body.dark .favor__slider {
   width: 100%;
   max-width: 120rem;
 }
@@ -652,12 +731,12 @@ body.dark .burger__item {
 
 .map__points_eagle {
   top: 7.4rem;
-  left: 45%;
+  left: 10%;
 }
 
 .map__points_alligator {
   top: 10.16rem;
-  left: 64%;
+  left: 14.5%;
 }
 
 .map__points_gorilla {
@@ -742,6 +821,49 @@ body.dark .burger__item {
   font-weight: 500;
   color: #333333;
   margin: 0.5rem;
+}
+
+body.dark .map {
+  background: #4f4f4f;
+}
+
+body.dark .map__title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #fefefe;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  body.dark .map__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+body.dark .big-map-svg path {
+  fill: #e1e1e1;
+}
+
+body.dark .big-map-svg .region {
+  fill: #333333;
+  stroke: #fefefe;
+}
+
+body.dark .point__hint {
+  background: #333333;
+}
+
+body.dark .point__description h4 {
+  color: #fefefe;
+}
+
+body.dark .point__description p {
+  color: #f2f2f2;
+}
+
+body.dark .point__description p span {
+  color: #fefefe;
 }
 
 @media (width: 640px) {

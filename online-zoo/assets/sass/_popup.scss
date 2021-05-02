@@ -1,0 +1,137 @@
+.popup-cover {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  &__wrapper {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+
+    position: fixed;
+    top: calc(50vh - 398px);
+    left: calc(50vw - 600px);
+  }
+
+  &__img {
+    width: 197px;
+    height: 795px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: 80%;
+    }
+  }
+
+  &__title {
+    @include title(#313131);
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__description {
+    @include description(#828282);
+    width: 100%;
+    max-width: 478px;
+    text-align: center;
+    margin: 4rem auto;
+  }
+
+  &__form {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100.3rem;
+    background-color: #f9f9f9;
+    padding: 10rem 13.9rem 8.2rem 13.9rem;
+  }
+
+  &__submit {
+    @include button__icon();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light-bg;
+  }
+}
+
+.checkout,
+.about-you {
+  @include h3($gray-3);
+  padding-top: 2rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.checkout {
+  color: $gray-2;
+}
+
+.pform {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .fieldset {
+    border: 1px solid $gray-3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .legend {
+    color: $gray-3;
+    margin: 0 5px;
+    padding: 0 1.5rem;
+  }
+
+  .input {
+    outline: none;
+    border: none;
+    height: 4.5rem;
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    color: $gray-2;
+    background-color: #f9f9f9;
+  }
+}
+
+.field-flex,
+.field-phone {
+  display: flex;
+  input {
+    width: 15rem;
+  }
+  datalist {
+    width: 15rem;
+  }
+}
+
+.column-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 725px;
+}
+
+.two-column {
+  width: 100%;
+  max-width: 33.5rem;
+}
+
+.popup-cover.hidden,
+.popup__wrapper.hidden {
+  display: none;
+}
+
+body.not-scrollable {
+  overflow: hidden;
+}

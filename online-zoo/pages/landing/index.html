@@ -10,11 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <script src="../../js/darkmode.js" defer></script>
+    <script src="../../js/popup.js" defer></script>
+    <!-- <script src="main.js" defer></script> -->
     <title>Online Zoo</title>
   </head>
-  <body>
-    <header class="header">
+  <body class="light">
+    <!-- <header class="header">
       <div class="wrapper-large">
         <div class="header__wrapper">
           <a href="index.html" class="logo">
@@ -291,7 +293,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="pets">
       <div class="wrapper">
         <h2 class="pets__title">Pets in Zoo</h2>
@@ -443,7 +445,7 @@
         </div>
       </div>
     </section>
-    <section class="pay">
+    <!-- <section class="pay">
       <div class="wrapper">
         <h2 class="pay__title">Pay and feed</h2>
         <p class="pay__description">
@@ -492,7 +494,9 @@
           </div>
         </div>
         <div class="pay__btn">
-          <a href="#" class="pay__button">donate</a>
+          <button id="popup-button3" class="pay__button popup-button">
+            donate
+          </button>
         </div>
       </div>
     </section>
@@ -736,6 +740,7 @@
             </a>
           </div>
           <svg
+            class="big-map-svg"
             viewBox="0 0 1200 498"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -865,6 +870,7 @@
               fill="#333333"
             />
             <path
+              class="region"
               d="M608.831 291.198L608.394 291.002L606.288 291.455L604.121 290.986L602.421 291.213L596.628 291.138L597.14 288.324L595.74 285.979L594.115 285.374L593.393 283.771L592.475 283.272L592.52 282.288L593.423 279.762L595.108 276.328L596.131 276.298L598.253 274.211L599.592 274.165L601.593 275.617L604.031 274.422L604.362 272.94L605.159 271.503L605.686 269.703L607.582 268.251L608.289 265.755L609.026 264.953L609.523 263.108L610.441 260.839L613.39 258.085L613.57 256.906L613.947 256.255L612.532 254.848L612.638 253.714L613.631 253.502L615.075 255.786L615.331 258.146L615.226 260.506L617.197 263.743L615.211 263.713L614.202 263.97L612.592 263.607L611.825 265.286L613.947 267.358L615.496 267.963L616.008 269.431L617.152 271.896L616.595 272.849L614.834 276.465L613.977 277.1L613.721 279.868L614.082 281.366L613.796 282.425L615.496 284.285L615.797 285.556L617.121 287.386L618.746 288.536L618.912 290.154L619.288 291.198L619.047 293.119L616.204 292.272L613.33 291.334L608.831 291.198Z"
               fill="#DADADA"
               stroke="#333333"
@@ -1363,6 +1369,7 @@
               fill="#DADADA"
               stroke="#333333"
               stroke-width="2"
+              class="region"
             />
             <path
               d="M293.724 299.806L292.189 298.959L290.444 297.779L289.436 298.339L286.412 297.855L285.554 296.327L284.892 296.373L281.326 294.346L280.859 293.241L282.183 292.969L282.048 291.199L282.906 289.898L284.666 289.671L286.201 287.433L287.6 285.557L286.306 284.725L287.013 282.652L286.291 279.4L287.089 278.462L286.607 275.452L285.238 273.561L285.75 271.837L286.893 272.079L287.6 271.035L286.863 268.932L287.314 268.418L289.15 268.524L291.919 266.043L293.393 265.665L293.483 264.485L294.281 261.475L296.403 259.826L298.644 259.765L298.96 259.024L301.729 259.312L304.603 257.527L306.032 256.725L307.838 255.016L309.087 255.227L309.975 256.165L309.222 257.36L306.905 257.965L305.912 259.735L304.498 260.764L303.399 262.08L302.842 264.621L301.774 266.694L303.595 266.936L303.986 268.569L304.738 269.356L304.964 270.793L304.498 272.109L304.603 272.85L305.461 273.153L306.273 274.393L310.862 274.045L312.909 274.499L315.331 277.555L316.776 277.177L319.334 277.373L321.365 276.965L322.614 277.57L321.922 279.491L321.109 280.686L320.778 283.242L321.455 285.602L322.448 286.661L322.554 287.448L320.733 289.218L322.012 290.004L322.945 291.26L324.013 294.799L323.336 295.238L322.644 293.135L321.666 292.016L320.477 293.241L313.541 293.166L313.571 295.389L315.662 295.752L315.527 297.114L314.82 296.751L312.803 297.341L312.788 299.912L314.368 301.213L314.94 303.255L314.865 304.798L313.375 314.555L311.57 312.664L310.501 312.573L312.743 308.958L310.005 307.294L307.868 307.597L306.574 306.977L304.618 307.914L301.97 307.476L299.833 303.739L298.178 302.832L297.035 301.153L294.672 299.458L293.724 299.806Z"
@@ -1429,6 +1436,7 @@
               fill="#DADADA"
               stroke="#3C3C3C"
               stroke-width="2"
+              class="region"
             />
             <path
               d="M362.864 406.874L365.075 406.496L368.852 409.249L370.116 409.143L373.923 411.443L376.857 413.409L379.129 415.829L377.805 417.524L378.993 419.551L377.79 421.789L374.163 423.786L371.545 423.06L369.74 423.453L366.369 421.91L364.067 422.031L361.72 420.05L361.675 417.751L362.322 416.949L361.84 413.394L362.337 409.733L362.864 406.874Z"
@@ -1508,9 +1516,12 @@
               </ul>
             </nav>
             <div class="footer__btn">
-              <a href="#" class="footer__button footer__button_first"
-                >donate for volunteers</a
+              <button
+                class="footer__button footer__button_first"
+                id="popup-button1"
               >
+                donate for volunteers
+              </button>
             </div>
           </div>
         </div>
@@ -1592,9 +1603,12 @@
               </ul>
             </div>
             <div class="footer__btn">
-              <a href="#" class="footer__button footer__button_second"
-                >donate for volunteers</a
+              <button
+                id="popup-button2"
+                class="footer__button footer__button_second"
               >
+                donate for volunteers
+              </button>
             </div>
           </div>
         </div>
@@ -1606,5 +1620,78 @@
         </div>
       </div>
     </footer>
+    <div class="popup-cover hidden" id="popup"></div>
+    <div class="popup__wrapper hidden">
+      <div class="popup__img">
+        <img
+          src="../../../online-zoo/assets/images/popupbg.jpg"
+          alt="popup img"
+        />
+      </div>
+      <div class="popup__form">
+        <h2 class="popup__title">Donate for your animal</h2>
+        <form action="#" class="pform">
+          <div class="column-wrap">
+            <div class="two-column">
+              <fieldset class="fieldset">
+                <legend class="legend">Сhoose an animal</legend>
+                <input class="input" list="option" required />
+                <datalist id="option">
+                  <option value="panda"></option>
+                  <option value="eagle"></option>
+                  <option value="alligator"></option>
+                  <option value="gorilla"></option>
+                  <option value="lion"></option>
+                </datalist>
+              </fieldset>
+              <h3 class="about-you">About you</h3>
+              <fieldset class="fieldset">
+                <legend class="legend">Name</legend>
+                <input class="input" id="name" type="text" required />
+              </fieldset>
+              <fieldset class="fieldset">
+                <legend class="legend">Email</legend>
+                <input class="input" type="Email" required />
+              </fieldset>
+              <fieldset class="fieldset field-phone">
+                <legend class="legend">Phone</legend>
+                <input class="input" list="num" required />
+                <datalist id="num">
+                  <option value="+7"></option>
+                  <option value="+998"></option>
+                  <option value="+1"></option>
+                </datalist>
+                <input class="input" type="number" required />
+              </fieldset>
+            </div>
+            <div class="two-column">
+              <fieldset class="fieldset">
+                <legend class="legend">To donate</legend>
+                <input class="input" type="text" required />
+              </fieldset>
+              <h3 class="checkout">Checkout</h3>
+              <fieldset class="fieldset">
+                <legend class="legend">Card number</legend>
+                <input class="input" type="number" required />
+              </fieldset>
+              <fieldset class="fieldset field-flex">
+                <legend class="legend">Expiry date</legend>
+                <input class="input" type="number" required />
+                <input class="input" type="number" required />
+              </fieldset>
+              <fieldset class="fieldset">
+                <legend class="legend">CVC</legend>
+                <input class="input" type="number" required />
+              </fieldset>
+            </div>
+          </div>
+          <p class="popup__description">
+            If don’t cancel your subscription before the trial ends on April 15,
+            2021, you agree that you will automatically be charged
+          </p>
+          <input type="submit" class="popup__submit invalid" id="send" />
+        </form>
+      </div>
+    </div> -->
   </body>
 </html>

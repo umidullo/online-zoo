@@ -25,6 +25,29 @@
   }
 }
 
+body.dark {
+  .favor {
+    background: $gray-2;
+
+    &__title {
+      @include title($base);
+    }
+
+    &__description {
+      @include description($gray-6);
+    }
+
+    &__progress {
+      @include progress($base, 8);
+    }
+
+    &__slider {
+      width: 100%;
+      max-width: 120rem;
+    }
+  }
+}
+
 .fslider__item {
   @include live-icon();
 }

@@ -45,12 +45,12 @@
     &_eagle {
       top: 7.4rem;
       // left: 12.1rem;
-      left: 45%;
+      left: 10%;
     }
     &_alligator {
       top: 10.16rem;
       // left: 17.35rem;
-      left: 64%;
+      left: 14.5%;
     }
     &_gorilla {
       top: 19rem;
@@ -121,6 +121,45 @@
         font-weight: 500;
         color: $gray-1;
         margin: 0.5rem;
+      }
+    }
+  }
+}
+
+body.dark {
+  .map {
+    background: $gray-2;
+
+    &__title {
+      @include title($base);
+    }
+  }
+  .big-map-svg {
+    path {
+      fill: #e1e1e1;
+    }
+
+    .region {
+      fill: $gray-1;
+      stroke: $base;
+    }
+  }
+  .point {
+    &__hint {
+      background: $gray-1;
+    }
+
+    &__description {
+      h4 {
+        color: $base;
+      }
+
+      p {
+        color: $gray-6;
+
+        span {
+          color: $base;
+        }
       }
     }
   }

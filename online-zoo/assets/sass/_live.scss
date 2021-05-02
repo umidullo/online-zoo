@@ -120,3 +120,21 @@
   background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
   border-radius: 50%;
 }
+
+body.dark {
+  .live {
+    background: $gray-2;
+
+    &__title {
+      @include title($base);
+    }
+
+    &__subtitle {
+      color: $base;
+    }
+
+    &__reason {
+      color: $gray-6;
+    }
+  }
+}
