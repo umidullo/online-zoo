@@ -8,8 +8,7 @@
   }
 
   &__progress {
-    margin-top: 46.6rem;
-
+    margin-top: 3rem;
     @include progress($gray-1, 8);
   }
 
@@ -26,56 +25,56 @@
   }
 
   &__slider {
-    width: 100%;
-    max-width: 130rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    position: absolute;
-    margin-left: -5rem;
   }
 }
 
-.slider {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 130rem;
-  position: relative;
-
+.pet-slider {
   &__content {
     width: 100%;
-    max-width: 120rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
   }
 
-  &____btn {
-    position: absolute;
+  &__item {
+    width: 100% / 4;
+    flex-shrink: 0;
+    transition-duration: 0.6s;
+  }
+
+  &__btn {
     display: block;
-    top: 0;
-    left: 0;
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    background-color: $light-bg;
+    cursor: pointer;
   }
 
-  .btn-left {
-    margin-right: 2rem;
-    width: 3rem;
-    height: 3rem;
-    background-color: $gray-3;
-    mask-image: url(../../../online-zoo/assets/icons/arrow.svg);
-    mask-repeat: no-repeat;
+  &__btn {
+    path {
+      fill: $gray-3;
+    }
   }
-  .btn-right {
-    margin-left: 2rem;
-    width: 3rem;
-    height: 3rem;
-    background-color: $gray-1;
-    mask-image: url(../../../online-zoo/assets/icons/arrow.svg);
-    mask-repeat: no-repeat;
-    transform: rotate(180deg);
+  &__btn:active {
+    path {
+      fill: $gray-2;
+    }
   }
+
+  &__btn:disabled {
+    path {
+      fill: $gray-4;
+    }
+  }
+}
+
+.btn-right_img {
+  transform: rotate(-180deg);
 }
 
 /*=====CARD IS NOT WORKING=====*/
@@ -84,26 +83,41 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  width: 277px;
-  height: 399px;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  transition: 0.6s;
+
+  // &:hover {
+  //   .card__description {
+  //     display: block;
+  //   }
+  // }
 
   &__img {
-    width: 100%;
-    height: 100%;
+    width: 277px;
+    height: 399px;
     border-radius: 0.5rem;
     object-fit: cover;
   }
 
   &__description {
-    visibility: hidden;
-    z-index: 2;
+    display: none;
+    width: 277px;
+    height: 399px;
     position: absolute;
-    width: 100%;
-    max-width: 19.6rem;
-    top: 26.9rem;
-    left: 7.2rem;
+    border-radius: 0.5rem;
 
+    z-index: 2;
+    background: linear-gradient(
+      348.75deg,
+      #000000 10.15%,
+      rgba(0, 0, 0, 0) 59%
+    );
     p {
+      position: relative;
+      left: 22px;
+      top: 269px;
       font-weight: normal;
       font-size: 14px;
       line-height: 16px;
@@ -116,15 +130,26 @@
   }
 
   &__btn {
+    position: relative;
+    left: 22px;
+    top: 269px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-width: 197px;
 
     .link-online {
       color: #4bd8b5;
     }
     .link-donate {
+      margin-left: -2rem;
       color: $light-bg;
+
+      outline: none;
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      cursor: pointer;
     }
   }
 
@@ -191,5 +216,3 @@ body.dark {
     }
   }
 }
-
-/* == задать для слайдеров отделбную обертку чтобы не костылить с абсолютами == */
