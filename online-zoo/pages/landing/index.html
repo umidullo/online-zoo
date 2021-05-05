@@ -11,8 +11,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="../../js/darkmode.js" defer></script>
-    <script src="../../js/popup.js" defer></script>
-    <script src="../../js/pets2.js" defer></script>
+    <!-- <script src="../../js/popup.js" defer></script> -->
+    <script src="../../js/pets.js" defer></script>
+    <!-- <script src="../../js/pets2.js" defer></script> -->
     <title>Online Zoo</title>
   </head>
   <body class="light">
@@ -124,58 +125,249 @@
           </div>
           <div class="animals">
             <div class="animals__slider">
-              <div class="bg">
-                <div class="bg__dot">
-                  <span></span>
+              <div class="scale">
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+
+                  <span class="dot"></span>
+                  <span class="dot"></span>
                 </div>
-                <div class="bg__line"></div>
               </div>
               <div class="animals__content">
-                <div class="animals__image">
-                  <img
-                    src="../../../online-zoo/assets/images/eagle1.jpg"
-                    alt="panda"
-                  />
-                  <div class="animals__description card">
-                    <p class="card__description">
-                      Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
-                      from China. He loves bamboos.
-                    </p>
-                    <div class="card__btns">
-                      <a href="#" class="card__button"
-                        ><img src="" alt="" class="card__button-img" />watch
-                        online</a
-                      >
+                <div data-index="1" class="animals-slide-mini">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/eagle1.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="animals__image">
-                  <img
-                    src="../../../online-zoo/assets/images/panda.jpg"
-                    alt="panda"
-                  />
-                  <div class="animals__description"></div>
+                <div data-index="2" class="animals-slide-mini animals-slide">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/panda.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="animals__image">
-                  <img
-                    src="../../../online-zoo/assets/images/gorilla.jpg"
-                    alt="panda"
-                  />
-                  <div class="animals__description"></div>
+                <div data-index="3" class="animals-slide-mini">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/gorilla.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="animals__image">
-                  <img
-                    src="../../../online-zoo/assets/images/alligator.jpg"
-                    alt="panda"
-                  />
-                  <div class="animals__description"></div>
+                <div data-index="4" class="animals-slide-mini">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/alligator.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="animals__image">
-                  <img
-                    src="../../../online-zoo/assets/images/fox.jpg"
-                    alt="panda"
-                  />
-                  <div class="animals__description"></div>
+                <div data-index="5" class="animals-slide-mini">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/fox.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="6" class="animals-slide-mini">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/elephant.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="7" class="animals-slide-mini">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/lion.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="8" class="animals-slide-mini">
+                  <div class="slide__card">
+                    <img
+                      src="../../../online-zoo/assets/images/tiger.jpg"
+                      alt="panda"
+                      class="slide__img"
+                    />
+                    <div class="slide__description">
+                      <p>
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="slide__card_btn">
+                        <a href="#" class="slide__card_link link-online"
+                          ><img
+                            src="../../../online-zoo/assets/icons/Polygon.svg"
+                            alt="lpay"
+                          />watch online</a
+                        >
+                        <button class="slide__card_link link-donate">
+                          <img
+                            src="../../../online-zoo/assets/icons/dollar.svg"
+                            alt="lpay"
+                          />donate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

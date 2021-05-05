@@ -215,4 +215,14 @@ body.dark {
       }
     }
   }
+
+  .pet-slider {
+    &__btn {
+      background-color: $gray-1;
+    }
+  }
+
+  .btn-right_img {
+    background-color: $gray-1;
+  }
 }
