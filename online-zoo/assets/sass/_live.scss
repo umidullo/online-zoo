@@ -77,11 +77,37 @@
 
 .video_secondary {
   position: relative;
+  // display: flex;
+  // justify-content: space-between;
+  height: 141px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.video_slider_content {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
   width: 100%;
-  max-width: 79rem;
+}
+
+// заглушка от ложного нажатия
+// .video_secure {
+//   width: 100%;
+//   max-width: 79rem;
+//   height: 141px;
+//   position: absolute;
+//   left: 0;
+// }
+
+.video__item {
+  // width: 100%;
+  // max-width: 272px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
 
   iframe {
     width: 246px;
@@ -90,16 +116,18 @@
   }
 }
 
-// заглушка от ложного нажатия
-.video_secure {
-  width: 100%;
-  max-width: 79rem;
+.video__cover {
+  width: 246px;
   height: 141px;
+  border-radius: 5px;
   position: absolute;
   left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.39);
 }
 
 .video_buttons {
+  margin-top: 3rem;
   display: flex;
   width: 37px;
   justify-content: space-between;

@@ -76,6 +76,11 @@ markersSvg.addEventListener('click', (e) => {
   activateMarker(clickedElem)
   sliderItems.forEach(e => e.classList.remove('fslider__item_active'))
   sliderItems[clickedElemIndex].classList.add('fslider__item_active');
+  const activeIndex = e.target.closest('.point').dataset.index;
+  let num = +activeIndex + +1;
+  mapInput.value = num;
+  mapOutput.innerHTML = `<b>0${mapInput.value}</b><span>/</span>08`;
+
 });
 
 sliderContent.addEventListener('click', (e) => {
@@ -96,7 +101,6 @@ const activateCard = (position) => {
       curPos = 1;
       sliderItems[maxVal - 1].classList.remove('fslider__item_active');
       sliderItems[curPos - 1].classList.add('fslider__item_active');
-      // console.log('asdf');
     } else {
       curPos += 1;
       sliderItems[curPos - 2].classList.remove('fslider__item_active');
@@ -116,7 +120,6 @@ const activateCard = (position) => {
     }
     mapInput.value = curPos;
   }
-  console.log(sliderItems[curPos - 1].dataset.name)
   let activePet = sliderItems[curPos - 1].dataset.name;
   activateMarker(activePet);
   mapOutput.innerHTML = `<b>0${mapInput.value}</b><span>/</span>08`;

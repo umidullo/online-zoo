@@ -479,6 +479,13 @@ body.dark .burger__item {
 
 .video_secondary {
   position: relative;
+  height: 141px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.video_slider_content {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,24 +494,39 @@ body.dark .burger__item {
           justify-content: space-between;
   margin-bottom: 3rem;
   width: 100%;
-  max-width: 79rem;
 }
 
-.video_secondary iframe {
+.video__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+}
+
+.video__item iframe {
   width: 246px;
   height: 141px;
   border-radius: 5px;
 }
 
-.video_secure {
-  width: 100%;
-  max-width: 79rem;
+.video__cover {
+  width: 246px;
   height: 141px;
+  border-radius: 5px;
   position: absolute;
   left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.39);
 }
 
 .video_buttons {
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
