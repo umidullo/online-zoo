@@ -20,18 +20,12 @@
 
   &__marker {
     position: absolute;
-    width: 120rem;
-    height: 49.8rem;
+    width: auto;
   }
 
   &__points {
     position: absolute;
-
-    &:hover {
-      path {
-        fill: #eb5757;
-      }
-    }
+    width: 100px;
 
     img {
       position: absolute;
@@ -44,21 +38,17 @@
 
     &_eagle {
       top: 7.4rem;
-      // left: 12.1rem;
-      left: 10%;
+      left: 12.1rem;
     }
     &_alligator {
-      top: 10.16rem;
-      // left: 17.35rem;
-      left: 14.5%;
+      top: 0.16rem;
+      left: 23.35rem;
     }
     &_gorilla {
-      top: 19rem;
-      left: 43.2rem;
+      left: 57.2rem;
     }
     &_panda {
-      top: 9rem;
-      left: 68.16rem;
+      left: 98.16rem;
     }
   }
 }
@@ -68,7 +58,6 @@
 
   .point-icon {
     position: absolute;
-    margin-top: -8.6rem;
   }
 
   &__hint {
@@ -91,11 +80,6 @@
     img {
       margin-left: 4.4rem;
     }
-  }
-
-  &:hover &__hint {
-    opacity: 1;
-    visibility: visible;
   }
 
   &__description {

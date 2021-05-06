@@ -6,8 +6,7 @@ const mapInput = document.querySelector('.favor__progress .progress__input');
 const mapOutput = document.querySelector('.favor__progress .progress__current');
 const markers = document.querySelectorAll('.map__points');
 const mapBtn = document.querySelector('.map__button');
-
-// console.log(mapBtn.href);
+const markersSvg = document.querySelector('.map__marker')
 
 let curPos = 2;
 let maxVal = sliderItems.length
@@ -71,6 +70,14 @@ const activateMarker = (animal) => {
   }
 }
 
+markersSvg.addEventListener('click', (e) => {
+  const clickedElem = e.target.closest('.point').dataset.name
+  const clickedElemIndex = e.target.closest('.point').dataset.index
+  activateMarker(clickedElem)
+  sliderItems.forEach(e => e.classList.remove('fslider__item_active'))
+  sliderItems[clickedElemIndex].classList.add('fslider__item_active');
+});
+
 sliderContent.addEventListener('click', (e) => {
   const clickedElem = e.target.closest('.fslider__item');
   if (!clickedElem) return;
@@ -80,8 +87,8 @@ sliderContent.addEventListener('click', (e) => {
   const activeIndex = clickedElem.dataset.index;
   mapInput.value = activeIndex;
   mapOutput.innerHTML = `<b>0${mapInput.value}</b><span>/</span>08`;
-  // motherContent.style.transform = `translateX(${-186 * (activeIndex - 2)}px)`;
 });
+
 
 const activateCard = (position) => {
   if (position === 'right') {

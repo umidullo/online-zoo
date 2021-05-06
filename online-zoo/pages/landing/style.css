@@ -2254,16 +2254,12 @@ body.dark .testimonial__slider .btn-right {
 
 .map__marker {
   position: absolute;
-  width: 120rem;
-  height: 49.8rem;
+  width: auto;
 }
 
 .map__points {
   position: absolute;
-}
-
-.map__points:hover path {
-  fill: #eb5757;
+  width: 100px;
 }
 
 .map__points img {
@@ -2277,22 +2273,20 @@ body.dark .testimonial__slider .btn-right {
 
 .map__points_eagle {
   top: 7.4rem;
-  left: 10%;
+  left: 12.1rem;
 }
 
 .map__points_alligator {
-  top: 10.16rem;
-  left: 14.5%;
+  top: 0.16rem;
+  left: 23.35rem;
 }
 
 .map__points_gorilla {
-  top: 19rem;
-  left: 43.2rem;
+  left: 57.2rem;
 }
 
 .map__points_panda {
-  top: 9rem;
-  left: 68.16rem;
+  left: 98.16rem;
 }
 
 .point {
@@ -2301,7 +2295,6 @@ body.dark .testimonial__slider .btn-right {
 
 .point .point-icon {
   position: absolute;
-  margin-top: -8.6rem;
 }
 
 .point__hint {
@@ -2330,11 +2323,6 @@ body.dark .testimonial__slider .btn-right {
 
 .point__hint img {
   margin-left: 4.4rem;
-}
-
-.point:hover .point__hint {
-  opacity: 1;
-  visibility: visible;
 }
 
 .point__description {
