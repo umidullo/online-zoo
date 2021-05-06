@@ -71,6 +71,18 @@ const activateMarker = (animal) => {
   }
 }
 
+sliderContent.addEventListener('click', (e) => {
+  const clickedElem = e.target.closest('.fslider__item');
+  if (!clickedElem) return;
+  activateMarker(clickedElem.dataset.name);
+  sliderItems.forEach((elem) => elem.classList.remove('fslider__item_active'));
+  clickedElem.classList.add('fslider__item_active');
+  const activeIndex = clickedElem.dataset.index;
+  mapInput.value = activeIndex;
+  mapOutput.innerHTML = `<b>0${mapInput.value}</b><span>/</span>08`;
+  // motherContent.style.transform = `translateX(${-186 * (activeIndex - 2)}px)`;
+});
+
 const activateCard = (position) => {
   if (position === 'right') {
     if (curPos >= maxVal) {
