@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="../../js/darkmode.js" defer></script>
+    <script src="../../js/map.js" defer></script>
     <title>Document</title>
   </head>
   <body class="light">
@@ -89,24 +90,35 @@
           species and their habitat.
         </p>
         <div class="favor__slider">
+          <button class="slider__btn btn-left">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.6663 16.1706L20.0167 29.5207C20.3255 29.8298 20.7376 30 21.1772 30C21.6167 30 22.0289 29.8298 22.3376 29.5207L23.3208 28.5378C23.9605 27.8973 23.9605 26.8564 23.3208 26.2169L12.1102 15.0062L23.3332 3.78314C23.642 3.47412 23.8125 3.06217 23.8125 2.6229C23.8125 2.18315 23.642 1.7712 23.3332 1.46194L22.3501 0.479263C22.0411 0.17024 21.6291 0 21.1896 0C20.7501 0 20.3379 0.17024 20.0291 0.479263L6.6663 13.8416C6.35679 14.1516 6.18679 14.5655 6.18777 15.0055C6.18679 15.4472 6.35679 15.8608 6.6663 16.1706Z"
+                fill="#828282"
+              />
+            </svg>
+          </button>
           <div class="fslider">
-            <a href="#" class="slider__btn btn-left">
-              <img src="../../../online-zoo/assets/icons/arrow.svg" alt="" />
-            </a>
             <div class="fslider__content">
-              <div class="fslider__item">
-                <form class="button__form_not">
-                  <button class="button_not">
+              <div data-name="gorilla" class="fslider__item">
+                <div class="button__form">
+                  <button class="button">
                     <img
-                      class="button__img_not"
+                      class="button__img"
                       src="../../../online-zoo/assets/images/gorilla.jpg"
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
-              <div class="fslider__item">
-                <form action="https://#" target="_blank" class="button__form">
+              <div data-name="panda" class="fslider__item fslider__item_active">
+                <div class="button__form">
                   <button class="button">
                     <img
                       class="button__img"
@@ -114,103 +126,91 @@
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
-              <div class="fslider__item">
-                <form
-                  action="https://#"
-                  target="_blank"
-                  class="button__form_not"
-                >
-                  <button class="button_not">
+              <div data-name="alligator" class="fslider__item">
+                <div class="button__form">
+                  <button class="button">
                     <img
-                      class="button__img_not"
+                      class="button__img"
                       src="../../../online-zoo/assets/images/alligator.jpg"
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
-              <div class="fslider__item">
-                <form
-                  action="https://#"
-                  target="_blank"
-                  class="button__form_not"
-                >
-                  <button class="button_not">
+              <div data-name="eagle" class="fslider__item">
+                <div class="button__form">
+                  <button class="button">
                     <img
-                      class="button__img_not"
+                      class="button__img"
                       src="../../../online-zoo/assets/images/eagle1.jpg"
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
-              <div class="fslider__item">
-                <form
-                  action="https://#"
-                  target="_blank"
-                  class="button__form_not"
-                >
-                  <button class="button_not">
+              <div data-name="tiger" class="fslider__item">
+                <div class="button__form">
+                  <button class="button">
                     <img
-                      class="button__img_not"
+                      class="button__img"
                       src="../../../online-zoo/assets/images/tiger.jpg"
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
-              <div class="fslider__item">
-                <form
-                  action="https://#"
-                  target="_blank"
-                  class="button__form_not"
-                >
-                  <button class="button_not">
+              <div data-name="elephant" class="fslider__item">
+                <div class="button__form">
+                  <button class="button">
                     <img
-                      class="button__img_not"
+                      class="button__img"
                       src="../../../online-zoo/assets/images/elephant.jpg"
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
-              <div class="fslider__item">
-                <form
-                  action="https://#"
-                  target="_blank"
-                  class="button__form_not"
-                >
-                  <button class="button_not">
+              <div data-name="lion" class="fslider__item">
+                <div class="button__form">
+                  <button class="button">
                     <img
-                      class="button__img_not"
+                      class="button__img"
                       src="../../../online-zoo/assets/images/lion.jpg"
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
-              <div class="fslider__item">
-                <form
-                  action="https://#"
-                  target="_blank"
-                  class="button__form_not"
-                >
-                  <button class="button_not">
+              <div data-name="zebra" class="fslider__item">
+                <div class="button__form">
+                  <button class="button">
                     <img
-                      class="button__img_not"
+                      class="button__img"
                       src="../../../online-zoo/assets/images/zebra.jpg"
                       alt=""
                     />
                   </button>
-                </form>
+                </div>
               </div>
             </div>
-            <a href="#" class="slider__btn btn-right">
-              <img src="../../../online-zoo/assets/icons/arrow.svg" alt="" />
-            </a>
           </div>
+          <button id="btn-right" class="btn-right slider__btn">
+            <svg
+              class="btn-right_img"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.6663 16.1706L20.0167 29.5207C20.3255 29.8298 20.7376 30 21.1772 30C21.6167 30 22.0289 29.8298 22.3376 29.5207L23.3208 28.5378C23.9605 27.8973 23.9605 26.8564 23.3208 26.2169L12.1102 15.0062L23.3332 3.78314C23.642 3.47412 23.8125 3.06217 23.8125 2.6229C23.8125 2.18315 23.642 1.7712 23.3332 1.46194L22.3501 0.479263C22.0411 0.17024 21.6291 0 21.1896 0C20.7501 0 20.3379 0.17024 20.0291 0.479263L6.6663 13.8416C6.35679 14.1516 6.18679 14.5655 6.18777 15.0055C6.18679 15.4472 6.35679 15.8608 6.6663 16.1706Z"
+                fill="#828282"
+              />
+            </svg>
+          </button>
         </div>
         <div class="favor__progress">
           <label class="progress">
@@ -233,7 +233,11 @@
       <div class="wrapper">
         <div class="map__img">
           <div class="map__marker">
-            <a href="#" class="point map__points map__points_eagle">
+            <a
+              href="#"
+              data-name="eagle"
+              class="point map__points map__points_eagle"
+            >
               <svg
                 width="67"
                 height="94"
@@ -276,8 +280,11 @@
                 </div>
               </div>
             </a>
-
-            <a href="#" class="point map__points map__points_alligator">
+            <a
+              href="#"
+              data-name="alligator"
+              class="point map__points map__points_alligator"
+            >
               <svg
                 width="67"
                 height="94"
@@ -320,7 +327,11 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="point map__points map__points_gorilla">
+            <a
+              href="#"
+              data-name="gorilla"
+              class="point map__points map__points_gorilla"
+            >
               <svg
                 width="67"
                 height="94"
@@ -363,8 +374,11 @@
                 </div>
               </div>
             </a>
-
-            <a href="#" class="point map__points map__points_panda">
+            <a
+              href="#"
+              data-name="panda"
+              class="point map__points map__points_panda"
+            >
               <svg
                 width="67"
                 height="94"
