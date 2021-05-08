@@ -1500,6 +1500,10 @@ body.dark .inspiration__description {
           transform: rotate(-180deg);
 }
 
+.btn-right_img path {
+  fill: #333333;
+}
+
 /*=====CARD IS NOT WORKING=====*/
 .card {
   display: -webkit-box;
@@ -1703,6 +1707,10 @@ body.dark .pet-slider__btn {
 
 body.dark .btn-right_img {
   background-color: #333333;
+}
+
+body.dark .btn-right_img path {
+  fill: #fefefe;
 }
 
 .pay {

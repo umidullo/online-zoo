@@ -534,8 +534,8 @@ body.dark .burger__item {
   border-width: 3px;
   border-style: solid;
   border-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#07eee0), to(#df496d));
-  background-image: linear-gradient(white, white), linear-gradient(to right, #07eee0 0%, #df496d 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f2f2f2)), -webkit-gradient(linear, left top, right top, from(#07eee0), to(#df496d));
+  background-image: linear-gradient(#f2f2f2, #f2f2f2), linear-gradient(to right, #07eee0 0%, #df496d 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -654,6 +654,20 @@ body.dark .slider__btn {
   outline: none;
   border: none;
   background: #4f4f4f;
+}
+
+body.dark .slider__btn path {
+  fill: #fefefe;
+}
+
+body.dark .button__form {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4f4f4f), to(#4f4f4f)), -webkit-gradient(linear, left top, right top, from(#07eee0), to(#df496d));
+  background-image: linear-gradient(#4f4f4f, #4f4f4f), linear-gradient(to right, #07eee0 0%, #df496d 100%);
+}
+
+body.dark .button__form:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4f4f4f), to(#4f4f4f)), -webkit-gradient(linear, left top, right top, from(#df496d), to(#07eee0));
+  background-image: linear-gradient(#4f4f4f, #4f4f4f), linear-gradient(to right, #df496d 0%, #07eee0 100%);
 }
 
 .map {

@@ -75,6 +75,9 @@
 
 .btn-right_img {
   transform: rotate(-180deg);
+  path {
+    fill: $gray-1;
+  }
 }
 
 /*=====CARD IS NOT WORKING=====*/
@@ -224,5 +227,8 @@ body.dark {
 
   .btn-right_img {
     background-color: $gray-1;
+    path {
+      fill: $base;
+    }
   }
 }
