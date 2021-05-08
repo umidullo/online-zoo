@@ -47,6 +47,9 @@ const setPosition = (direction) => {
 }
 
 const setActiveCard = (direction) => {
+  sliderItems.forEach(e => {
+    e.querySelector('.card__description').style.display = 'none'
+  })
   if (direction === 'right') {
     if (activeCardIndex >= sliderItemsLength) {
       activeCardIndex = 0;

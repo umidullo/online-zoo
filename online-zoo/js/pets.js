@@ -16,14 +16,17 @@ motherContent.addEventListener('click', (e) => {
 
 inputElem.addEventListener('input', (event) => {
   let index = inputElem.value - 1;
-  if (index < 7 && index >= 0) {
-    if (slides[index + 1].classList.contains('animals-slide')) {
-      slides[index + 1].classList.remove('animals-slide')
-    } else if (slides[index - 1].classList.contains('animals-slide')) {
-      slides[index - 1].classList.remove('animals-slide')
-    }
-  }
-  if (index === 7) slides[index - 1].classList.remove('animals-slide');
+  // if (index < 7 && index >= 0) {
+  //   if (slides[index + 1].classList.contains('animals-slide')) {
+  //     slides[index + 1].classList.remove('animals-slide')
+  //   } else if (slides[index - 1].classList.contains('animals-slide')) {
+  //     slides[index - 1].classList.remove('animals-slide')
+  //   }
+  // }
+  // if (index === 7) slides[index - 1].classList.remove('animals-slide');
+  slides.forEach(e => {
+    e.classList.remove('animals-slide');
+  })
   slides[index].classList.add('animals-slide')
   motherContent.style.transform = `translateX(${-186 * (index - 1)}px)`;
   outputElem.innerHTML = `<b>0${inputElem.value}</b><span>/</span>08`;
